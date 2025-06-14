@@ -17,6 +17,12 @@
     .stack { display: flex; flex-wrap: wrap; gap: 1rem; }
     .stack div { background: #eef1f5; padding: 0.5rem 1rem; border-radius: 5px; font-weight: bold; font-size: 0.9rem; }
     footer { text-align: center; font-size: 0.9rem; padding: 2rem; color: #888; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      .container { padding: 0 0.5rem; }
+      .stack { flex-direction: column; }
+    }
   </style>
 </head>
 <body>
@@ -83,9 +89,21 @@ about building high-performance teams and leading transformation initiatives.</p
 
     <section>
       <h2>Download Resume</h2>
-      <p><a href="Hemaraju_Chinnam_Resume.pdf" download>📄 Click here to download my resume</a></p>
+      <p><a href="Hemaraju_Chinnam_Resume.pdf" download style="display: inline-block; background-color: #003366; color: white; padding: 0.7rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: bold;">📄 Download My Resume</a></p>
     </section>
   </div>
+
+  <section>
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="display: flex; flex-direction: column; gap: 1rem; max-width: 500px;">
+        <input type="text" name="name" placeholder="Your Name" required style="padding: 0.5rem; border: 1px solid #ccc; border-radius: 5px;">
+        <input type="email" name="_replyto" placeholder="Your Email" required style="padding: 0.5rem; border: 1px solid #ccc; border-radius: 5px;">
+        <textarea name="message" rows="5" placeholder="Your Message" required style="padding: 0.5rem; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+        <button type="submit" style="padding: 0.7rem; background-color: #003366; color: white; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">Send Message</button>
+      </form>
+    </div>
+  </section>	
   <footer>
     &copy; 2025 Hemaraju Chinnam — Engineering Manager | Cloud SaaS Products | Technical Leader
   </footer>
